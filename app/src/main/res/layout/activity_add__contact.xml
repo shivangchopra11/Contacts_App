@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@color/cyan"
+    android:background="@color/lightgray"
     android:layout_height="match_parent"
     tools:context="com.example.shivang.contacts.Add_Contact">
 
@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@color/black"
+        android:background="@color/colorPrimaryLight"
         android:textColor="@color/white"
+        android:hint="Enter Name"
         android:textSize="50dp"
         android:textAlignment="center"
         android:id="@+id/disp_name1" />
@@ -30,6 +31,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:inputType="number"
+        android:hint="Enter Number"
         android:id="@+id/number1"
         />
     <TextView
@@ -43,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:hint="Enter Email"
         android:id="@+id/email1"
         />
     <TextView
@@ -54,10 +57,11 @@
         android:text="CATEGORY"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="8dp" />
-    <Spinner
+    <android.support.v7.widget.AppCompatSpinner
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:prompt="@string/category"
         android:id="@+id/category1" />
     <LinearLayout
         android:layout_width="match_parent"

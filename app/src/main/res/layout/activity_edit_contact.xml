@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cyan"
+    android:background="@color/lightgray"
     tools:context="com.example.shivang.contacts.Edit_Contact">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@color/black"
+        android:background="@color/colorPrimaryLight"
         android:textColor="@color/white"
         android:textSize="50dp"
+        android:hint="Enter Name"
         android:textAlignment="center"
         android:id="@+id/disp_name"/>
     <TextView
@@ -29,6 +30,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:inputType="number"
+        android:hint="Enter Number"
         android:id="@+id/number"/>
     <TextView
         android:layout_width="match_parent"
@@ -41,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:hint="Enter Email"
         android:id="@+id/email"/>
     <TextView
         android:layout_width="match_parent"

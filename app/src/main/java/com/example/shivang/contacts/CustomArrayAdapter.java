@@ -107,7 +107,7 @@ public class CustomArrayAdapter extends ArrayAdapter {
             viewHolder.categoryImageView.setBackgroundResource(R.drawable.home);
         else if(c.category.compareTo("WORK")==0)
             viewHolder.categoryImageView.setBackgroundResource(R.drawable.work);
-        convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.black));
+        convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.lightgray));
         return convertView;
     }
 }

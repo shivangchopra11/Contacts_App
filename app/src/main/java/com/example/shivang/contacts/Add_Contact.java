@@ -20,6 +20,7 @@ public class Add_Contact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add__contact);
+        super.setTitle("Add Contact")  ;
         final EditText name = (EditText) findViewById(R.id.disp_name1);
         final EditText number = (EditText) findViewById(R.id.number1);
         final EditText email = (EditText) findViewById(R.id.email1);
@@ -28,7 +29,7 @@ public class Add_Contact extends AppCompatActivity {
                 R.array.category_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         category.setAdapter(adapter);
-
+        //category.setPrompt("");
         final Contact c = new Contact();
 
 

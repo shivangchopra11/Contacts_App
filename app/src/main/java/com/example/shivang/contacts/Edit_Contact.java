@@ -23,6 +23,7 @@ public class Edit_Contact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_contact);
+        super.setTitle("Edit Contact");
         final EditText name = (EditText) findViewById(R.id.disp_name);
         final EditText number = (EditText) findViewById(R.id.number);
         final EditText email = (EditText) findViewById(R.id.email);
