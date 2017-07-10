@@ -102,11 +102,11 @@ public class CustomArrayAdapter extends ArrayAdapter {
         viewHolder.nameTextView.setText(c.name);
         viewHolder.detailsTextView.setText(c.number);
         if(c.category.compareTo("SCHOOL")==0)
-            viewHolder.categoryImageView.setBackgroundResource(R.drawable.school);
+            viewHolder.categoryImageView.setBackgroundResource(R.drawable.round_school);
         else if(c.category.compareTo("HOME")==0)
-            viewHolder.categoryImageView.setBackgroundResource(R.drawable.home);
+            viewHolder.categoryImageView.setBackgroundResource(R.drawable.round_home);
         else if(c.category.compareTo("WORK")==0)
-            viewHolder.categoryImageView.setBackgroundResource(R.drawable.work);
+            viewHolder.categoryImageView.setBackgroundResource(R.drawable.round_work);
         convertView.setBackgroundColor(ContextCompat.getColor(context,R.color.lightgray));
         return convertView;
     }
